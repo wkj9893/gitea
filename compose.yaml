@@ -1,13 +1,8 @@
-version: "3"
-
 services:
   gitea:
     image: gitea/gitea:latest
     volumes:
       - ./gitea:/data
-    ports:
-      - "3000:3000"
-
 
   cloudflared:
     image: cloudflare/cloudflared:latest
